@@ -59,7 +59,7 @@ function StdReg() {
     useEffect(() => {
         const getMentors = async () => {
             try {
-                const response = await axios.get('http://localhost:3001/getAllMentors');
+                const response = await axios.get('https://fms-backend-18bq.onrender.com/getAllMentors');
                 setMentorData(response.data);
             } catch (error) {
 
@@ -71,7 +71,7 @@ function StdReg() {
 
     const handleClick = async (e) => {
         e.preventDefault();
-        await axios.post('http://localhost:3001/stdreg', {
+        await axios.post('https://fms-backend-18bq.onrender.com/stdreg', {
             name,
             roll,
             admission,

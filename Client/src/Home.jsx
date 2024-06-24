@@ -13,7 +13,7 @@ function Home() {
     const handleClick = (e) => {
         e.preventDefault()
         const user = JSON.parse(localStorage.getItem('user'));
-        axios.post('http://localhost:3001/home', {
+        axios.post('https://fms-backend-18bq.onrender.com/home', {
             id: user.id,
             name,
             roll,
